@@ -1,0 +1,7 @@
+{% extends 'email/email_base.html' %}
+{% block body %}
+Hello {{receiver.username}}.<br/>
+{{sender.username}} is on HomeCaptain.com and they sent the following message to you:
+
+{{message}}
+{% endblock %}

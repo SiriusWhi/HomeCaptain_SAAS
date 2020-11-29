@@ -1,0 +1,37 @@
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'homecaptain',
+        'USER': 'homecaptain',
+        'PASSWORD': 'homecaptain',
+        'HOST': 'localhost',
+        'PORT': '',
+        'OPTIONS': {
+            #"init_command": "SET storage_engine=INNODB",
+        }
+    },
+}
+SCHEME = 'http'
+DOMAIN = 'local.homecaptain.com'
+PORT = "8000"
+GOOGLE_OAUTH_CLIENT_ID = "405077832351-lp98abenhf75jsj416g6126osglhhk2u.apps.googleusercontent.com"
+OTHER_ALLOWED_HOSTS = [
+    '192.168.56.101',
+    '127.0.0.1',
+    'localhost',
+]    
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+AWS_ACCESS_KEY_ID = "AKIAI2UYZ7H3RBEBZK7A"
+AWS_SECRET_ACCESS_KEY = "joMwQ+kAd5JHXYKQu9UxR5V9JgPZdIjvnR0dTRTv"
+AWS_BUCKET_NAME = 'homecaptainlocal'
+AWS_PROPERTY_PHOTOS_BUCKET_NAME = AWS_BUCKET_NAME
+
+##The sample file can be downloaded from
+##https://drive.google.com/file/d/0B-cmwKtxVJ4_T20tTDF2VUljOUE/view
+##After download, change the file path below to your local path
+SAMPLE_MLS_DATA_FILE = "../MLS/rets-syndication-schemas_v2012-03/Syndication/2012-03/bjl.xml"
+COUNT_OF_MLS_PROPERTIES_TO_PARSE = 500
+GEOCODIO_API_KEY = "bc153b336dd3651b6137cbebb5d55bcc5eccb53"
+SENDGRID_API_KEY = "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"

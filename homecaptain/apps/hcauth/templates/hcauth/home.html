@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+	  href="{% static 'vendor/bootstrap-4.0.0/css/bootstrap.min.css' %}"
+	  crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <a href="https://accounts.google.com/o/oauth2/auth?client_id={{google_oauth_client_id}}&redirect_uri={{redirect_url}}&scope=profile+email&response_type=code&state=0XCgRM7QFUa4" class="btn btn-primary">Google Login</a>
+    <a href="#" id="id_logout_btn">LOGOUT</a>
+    
+    <div class="jumbotron">
+      <div id="id_user_token">No Token, no one is logged in</div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'vendor/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'vendor/js/popper.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap-4.0.0/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendor/js/url.min.js' %}"></script>
+    <!-- <script src="{% static 'vendor/js/js.cookie.js' %}"></script> -->
+    <script>
+      var GOOGLE_CODE_TO_ACCESS_TOKEN_URL = "{{oauth_access_token_url}}";
+    </script>
+    <script src="{% static 'js/utils.js' %}"></script>
+    <script src="{% static 'js/home.js' %}"></script>
+  </body>
+</html>

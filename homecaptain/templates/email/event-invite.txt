@@ -1,0 +1,10 @@
+{% extends 'email/email_base.txt' %}
+{% block body %}
+
+Hello {{receiver.username}}
+
+{{sender.username}} is on HomeCaptain.com and they sent the following message to you:
+
+{{message}}
+
+{% endblock %}

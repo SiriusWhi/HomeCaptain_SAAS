@@ -1,0 +1,7 @@
+{% block body %}{% endblock %}
+
+At HomeCaptain we help guide you through one of the largest transactions in your life, buying or selling a home.
+
+Sincerely
+Clarence Fletcher
+Home Captain

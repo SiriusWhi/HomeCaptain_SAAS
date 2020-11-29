@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --no-clean",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@deveodk/vue-toastr": "^1.0.4",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "register-service-worker": "^1.0.0",
+    "simplebar": "^3.1.1",
+    "vee-validate": "^2.1.4",
+    "vue": "^2.5.17",
+    "vue-axios": "^2.1.4",
+    "vue-bootstrap-typeahead": "^0.2.6",
+    "vue-cookies": "^1.5.12",
+    "vue-date-pick": "^1.0.5",
+    "vue-js-toggle-button": "^1.3.1",
+    "vue-router": "^3.0.1",
+    "vue-select": "^2.5.1",
+    "vue2-google-maps": "^0.10.5",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-plugin-pwa": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

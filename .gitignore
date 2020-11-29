@@ -1,0 +1,10 @@
+*~
+*pyc
+env
+local
+local_settings.py
+archive
+package-lock.json
+dist
+.idea/
+.vscode/

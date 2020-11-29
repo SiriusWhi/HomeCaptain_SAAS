@@ -1,0 +1,40 @@
+# This is a sample build configuration for Python.
+# Check our guides at https://confluence.atlassian.com/x/x4UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: python:3.6.6
+
+pipelines:
+  default:
+    - step:
+        name: Build and Test
+        services:
+          - postgres
+        script: # Modify the commands below to build your repository.
+          - pip install -r requirements.txt
+          - cd homecaptain/homecaptain
+          - ln -s local_settings_test.py local_settings.py
+          - cd ..
+          - python manage.py migrate
+          - python manage.py test
+  branches:
+    develop:
+      - step:
+          name: Build, Test and Deploy
+          services:
+            - postgres
+          script: # Modify the commands below to build your repository.
+            - pip install -r requirements.txt
+            - cd homecaptain/homecaptain
+            - ln -s local_settings_test.py local_settings.py
+            - cd ..
+            - python manage.py migrate
+            - python manage.py test
+            - cd ..
+            - fab deploy-staging
+
+definitions:
+  services:
+    postgres:
+      image: postgres

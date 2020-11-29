@@ -1,0 +1,26 @@
+@import './home-manage.scss';
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  padding: 115px 30px 30px;
+}
+
+.pagination {
+  margin-bottom: 0;
+
+  .page-item {
+    .page-link {
+      color: #242424;
+      border: none;
+    }
+
+    &.active {
+      .page-link {
+        border: none;
+        background: #3498db;
+        border-radius: 5px;
+      }
+    }
+  }
+}

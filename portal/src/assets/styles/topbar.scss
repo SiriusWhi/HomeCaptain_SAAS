@@ -1,0 +1,92 @@
+.topbar {
+  position: fixed;
+  padding: 30px 30px 15px;
+  height: 100px;
+  width: calc(100% - 360px);
+
+  .info {
+    font-size: 24px;
+    color: #989898;
+    line-height: 55px;
+    float: left;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(44, 113, 199);
+    }
+  }
+
+  .search {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin: 0 40px;
+    padding: 1px 25px;
+    width: calc(100% - 490px);
+    min-width: 340px;
+    max-width: 800px;
+    float: left;
+
+    svg {
+      color: gray;
+      top: 1px;
+      position: absolute;
+      height: 52px;
+      width: 18px;
+    }
+
+    .custom-input-container {
+      margin: 9px 30px;
+    }
+  }
+
+  .actions {
+    display: inline-block;
+    float: right;
+
+    span {
+      font-size: 24px;
+      color: #989898;
+      line-height: 55px;
+      float: left;
+      cursor: pointer;
+      margin: 0 15px;
+    }
+
+    .user-info {
+      padding-left: 20px;
+      display: inline-block;
+
+      .user-name {
+        float: left;
+        font-size: 18px;
+      }
+
+      .user-avatar {
+        width: 55px;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        cursor: pointer;
+        float: left;
+        box-shadow: 0 10px 30px -5px rgba(60,77,105,0.15);
+      }
+
+      .log-out {
+        font-weight: normal;
+        margin: 0 0 0 20px;
+        float: left;
+      }
+    }
+  }
+}
+
+.tooltip {
+  .arrow {
+    &:before {
+      border-bottom-color: #989898 !important;
+    }
+  }
+  .tooltip-inner {
+    background-color: #989898;
+    font-size: 11px;
+  }
+}
